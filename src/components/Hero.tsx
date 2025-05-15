@@ -49,7 +49,8 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              Transforming cloud infrastructure with security-first approach and automated solutions
+              Transforming cloud infrastructure with a security-first mindset and automated DevSecOps solutions
+
             </motion.p>
 
             <motion.div

@@ -58,7 +58,11 @@ export default function About() {
             className="relative"
           >
             <div className="relative w-64 h-64 mx-auto rounded-full overflow-hidden bg-gradient-to-br from-blue-500 to-blue-600 dark:from-blue-400 dark:to-blue-500 flex items-center justify-center shadow-xl">
-              <div className="text-4xl text-white">👨‍💻</div>
+              <img
+                src="/images/Debasish.jpeg"
+                alt="Profile"
+                className="w-full h-full object-cover"
+              />
             </div>
             <div className="absolute -top-4 -right-4 w-32 h-32 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
             <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"></div>
@@ -72,7 +76,7 @@ export default function About() {
             className="space-y-6"
           >
             <p className="text-lg text-gray-600 dark:text-gray-300">
-            I am a highly motivated Cloud DevSecOps Engineer with over 3 years of experience architecting, implementing, and managing secure cloud environments across AWS, Azure, and Google Cloud Platform. My core strengths include automating deployment pipelines, embedding security best practices, and optimizing cloud resources for performance, scalability, and cost efficiency.
+            Cloud DevSecOps Engineer with 3+ years of experience architecting secure, scalable, and automated infrastructure across AWS, Azure, and GCP. My core strengths include automating deployment pipelines, embedding security best practices, and optimizing cloud resources for performance, scalability, and cost efficiency.
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-300">
             With deep expertise in Infrastructure as Code (IaC), containerization, and continuous integration/continuous deployment (CI/CD), I design solutions that empower organizations to deliver faster, safer, and more reliable software. I am passionate about building resilient, cloud-native systems that align with industry standards and compliance frameworks such as CIS Benchmarks and NIST.

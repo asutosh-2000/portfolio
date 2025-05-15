@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { EnvelopeIcon, PhoneIcon, MapPinIcon } from '@heroicons/react/24/outline';
+import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -13,7 +14,6 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
     console.log('Form submitted:', formData);
   };
 
@@ -84,6 +84,37 @@ export default function Contact() {
                 </p>
               </div>
             </div>
+
+            {/* Social Media Links */}
+            <div className="flex space-x-6 mt-6">
+              <a
+                href="https://www.linkedin.com/in/debasish-mohanty-8765d/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 dark:text-blue-400 hover:scale-110 transition-transform"
+                aria-label="LinkedIn"
+              >
+                <FaLinkedin size={24} />
+              </a>
+              <a
+                href="https://github.com/Debasish-87"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-800 dark:text-white hover:scale-110 transition-transform"
+                aria-label="GitHub"
+              >
+                <FaGithub size={24} />
+              </a>
+              <a
+                href="https://x.com/DebasishM8765"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-400 hover:scale-110 transition-transform"
+                aria-label="Twitter"
+              >
+                <FaTwitter size={24} />
+              </a>
+            </div>
           </motion.div>
 
           <motion.div
@@ -120,7 +151,10 @@ export default function Contact() {
                 />
               </div>
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                <label
+                  htmlFor="message"
+                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+                >
                   Message
                 </label>
                 <textarea
@@ -132,6 +166,11 @@ export default function Contact() {
                   required
                 />
               </div>
+
+              <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">
+                🔒 Your information will not be shared. I’ll respond within 1–2 business days.
+              </p>
+
               <button
                 type="submit"
                 className="w-full px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-md hover:from-blue-700 hover:to-blue-900 transition-colors duration-200"
@@ -144,4 +183,4 @@ export default function Contact() {
       </div>
     </section>
   );
-} 
+}
