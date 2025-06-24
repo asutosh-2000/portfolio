@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { EnvelopeIcon, PhoneIcon, MapPinIcon } from '@heroicons/react/24/outline';
-import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -12,9 +12,33 @@ export default function Contact() {
     message: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch('https://formspree.io/f/mdkzwvzo', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        alert('✅ Message sent successfully!');
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        alert('❌ Something went wrong. Please try again later.');
+      }
+    } catch (error) {
+      console.error('Error sending form:', error);
+      alert('❌ An error occurred. Please try again later.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -105,15 +129,6 @@ export default function Contact() {
               >
                 <FaGithub size={24} />
               </a>
-              {/* <a
-                href="https://x.com/DebasishM8765"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-400 hover:scale-110 transition-transform"
-                aria-label="Twitter"
-              >
-                <FaTwitter size={24} />
-              </a> */}
             </div>
           </motion.div>
 
@@ -129,6 +144,7 @@ export default function Contact() {
                   Name
                 </label>
                 <input
+                  name="name"
                   type="text"
                   id="name"
                   value={formData.name}
@@ -142,6 +158,7 @@ export default function Contact() {
                   Email
                 </label>
                 <input
+                  name="email"
                   type="email"
                   id="email"
                   value={formData.email}
@@ -151,13 +168,11 @@ export default function Contact() {
                 />
               </div>
               <div>
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
-                >
+                <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                   Message
                 </label>
                 <textarea
+                  name="message"
                   id="message"
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
@@ -173,9 +188,10 @@ export default function Contact() {
 
               <button
                 type="submit"
+                disabled={isSubmitting}
                 className="w-full px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-md hover:from-blue-700 hover:to-blue-900 transition-colors duration-200"
               >
-                Send Message
+                {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>
             </form>
           </motion.div>
