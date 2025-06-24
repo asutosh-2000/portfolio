@@ -45,7 +45,7 @@ export default function About() {
             About Me
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            I’m a dedicated Cloud Database Engineer with 3+ years of experience in designing, managing, and optimizing cloud-native database solutions across AWS, Azure, and GCP. My focus lies in building secure, scalable, and high-performance database architectures that support business-critical applications.
+            I’m a dedicated Cloud Database Engineer with 2+ years of experience in designing, managing, and optimizing cloud-native database solutions across AWS, Azure, and GCP. My focus lies in building secure, scalable, and high-performance database architectures that support business-critical applications.
           </p>
         </motion.div>
 
