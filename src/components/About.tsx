@@ -45,7 +45,7 @@ export default function About() {
             About Me
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            A results-driven Cloud DevSecOps Engineer with expertise in designing secure, scalable, and automated cloud infrastructure
+            I’m a dedicated Cloud Database Engineer with 3+ years of experience in designing, managing, and optimizing cloud-native database solutions across AWS, Azure, and GCP. My focus lies in building secure, scalable, and high-performance database architectures that support business-critical applications.
           </p>
         </motion.div>
 
@@ -59,7 +59,7 @@ export default function About() {
           >
             <div className="relative w-64 h-64 mx-auto rounded-full overflow-hidden bg-gradient-to-br from-blue-500 to-blue-600 dark:from-blue-400 dark:to-blue-500 flex items-center justify-center shadow-xl">
               <img
-                src="/images/Debasish.jpeg"
+                src="\images\asutosh_pofile_pic.jpg"
                 alt="Profile"
                 className="w-full h-full object-cover"
               />
@@ -76,13 +76,22 @@ export default function About() {
             className="space-y-6"
           >
             <p className="text-lg text-gray-600 dark:text-gray-300">
-            Cloud DevSecOps Engineer with 3+ years of experience architecting secure, scalable, and automated infrastructure across AWS, Azure, and GCP. My core strengths include automating deployment pipelines, embedding security best practices, and optimizing cloud resources for performance, scalability, and cost efficiency.
+            Cloud-native database provisioning (RDS, Cloud SQL, Cosmos DB, DynamoDB)
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-300">
-            With deep expertise in Infrastructure as Code (IaC), containerization, and continuous integration/continuous deployment (CI/CD), I design solutions that empower organizations to deliver faster, safer, and more reliable software. I am passionate about building resilient, cloud-native systems that align with industry standards and compliance frameworks such as CIS Benchmarks and NIST.
+            Infrastructure as Code for database deployment
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-300">
-            Driven by a security-first mindset, I thrive at the intersection of development, operations, and security — transforming cloud infrastructure into robust platforms that support innovation and business agility. I am committed to continuous learning, staying ahead of emerging trends, and helping teams deliver secure, high-quality solutions at scale.
+            Backup, restore, replication, and disaster recovery strategies
+            </p>
+            <p className="text-lg text-gray-600 dark:text-gray-300">
+            Query optimization, indexing, and schema design
+            </p>
+            <p className="text-lg text-gray-600 dark:text-gray-300">
+            Implementing data security, compliance, and encryption-at-rest/in-transit
+            </p>
+            <p className="text-lg text-gray-600 dark:text-gray-300">
+            Infrastructure as Code for database deployment
             </p>
           </motion.div>
         </div>

@@ -7,8 +7,8 @@ import Layout from "@/components/Layout";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Cloud DevSecOps Engineer Portfolio",
-  description: "Professional portfolio showcasing cloud, DevOps, and security expertise",
+  title: "Cloud Database Engineer Portfolio",
+  description: "Professional portfolio showcasing cloud, Database, and security expertise",
 };
 
 export default function RootLayout({

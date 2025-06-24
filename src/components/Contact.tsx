@@ -31,7 +31,7 @@ export default function Contact() {
             Get in Touch
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            Let's discuss how I can help with your cloud infrastructure needs
+            Let's discuss how I can help with your cloud Database infrastructure needs
           </p>
         </motion.div>
 
@@ -52,7 +52,7 @@ export default function Contact() {
                   Email
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300">
-                  debasishm8765@gmail.com
+                  asutosh.m.2000@gmail.com
                 </p>
               </div>
             </div>
@@ -66,7 +66,7 @@ export default function Contact() {
                   Phone
                 </h3>
                 <p className="text-gray-600 dark:text-gray-300">
-                  +91 6370444819
+                  +91 9078854277
                 </p>
               </div>
             </div>
@@ -88,7 +88,7 @@ export default function Contact() {
             {/* Social Media Links */}
             <div className="flex space-x-6 mt-6">
               <a
-                href="https://www.linkedin.com/in/debasish-mohanty-8765d/"
+                href="https://www.linkedin.com/in/asutosh2000/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-600 dark:text-blue-400 hover:scale-110 transition-transform"
@@ -97,7 +97,7 @@ export default function Contact() {
                 <FaLinkedin size={24} />
               </a>
               <a
-                href="https://github.com/Debasish-87"
+                href="https://github.com/asutosh-2000"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-800 dark:text-white hover:scale-110 transition-transform"
@@ -105,7 +105,7 @@ export default function Contact() {
               >
                 <FaGithub size={24} />
               </a>
-              <a
+              {/* <a
                 href="https://x.com/DebasishM8765"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -113,7 +113,7 @@ export default function Contact() {
                 aria-label="Twitter"
               >
                 <FaTwitter size={24} />
-              </a>
+              </a> */}
             </div>
           </motion.div>
 

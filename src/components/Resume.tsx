@@ -32,10 +32,10 @@ export default function Resume() {
           <div className="flex flex-col items-center space-y-6">
             <div className="text-center">
               <h3 className="text-2xl font-semibold text-gray-900 dark:text-white mb-2">
-                Cloud DevSecOps Engineer
+                Cloud Database Engineer | Cloud-Native Database Expert
               </h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Experienced in building secure and scalable cloud infrastructure
+                Experienced in designing, deploying, and optimizing secure, scalable, and high-performance cloud database infrastructure
               </p>
             </div>
 
@@ -45,25 +45,25 @@ export default function Resume() {
               <div>
                 <h4 className="font-semibold text-gray-900 dark:text-white">Expertise</h4>
                 <ul className="mt-2 space-y-1 text-gray-600 dark:text-gray-300">
-                  <li>• Cloud Architecture</li>
-                  <li>• DevOps Automation</li>
-                  <li>• Security Implementation</li>
-                  <li>• Infrastructure as Code</li>
+                  <li>• Cloud Database Architecture </li>
+                  <li>• Database Performance Tuning </li>
+                  <li>• Data Security & Compliance</li>
+                  <li>• Backup Automation and Monitoring</li>
                 </ul>
               </div>
               <div>
                 <h4 className="font-semibold text-gray-900 dark:text-white">Tools</h4>
                 <ul className="mt-2 space-y-1 text-gray-600 dark:text-gray-300">
                   <li>• AWS/Azure/GCP</li>
-                  <li>• Terraform/Kubernetes</li>
-                  <li>• Docker/GitLab CI</li>
-                  <li>• Security Tools</li>
+                  <li>• Terraform, Bash, Python, MongoDB</li>
+                  <li>• PostgreSQL, MySQL, SQL Server</li>
+                  <li>• IAM, CIS Benchmarking, Audit Logs </li>
                 </ul>
               </div>
             </div>
 
             <a
-              href="/resume.pdf"
+              href="\Asutosh_Mohanty_Resume.pdf"
               download
               className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-medium rounded-full text-white bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >

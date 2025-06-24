@@ -37,7 +37,7 @@ function LayoutContent({ children }: { children: React.ReactNode }) {
               transition={{ duration: 0.5 }}
             >
               <Link href="/" className="text-xl font-bold text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors duration-200">
-                Debasish Mohanty
+                Asutosh Mohanty
               </Link>
             </motion.div>
             <div className="flex items-center space-x-6">

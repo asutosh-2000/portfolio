@@ -29,7 +29,7 @@ export default function Hero() {
             >
               Hi, I'm{' '}
               <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
-                Debasish Mohanty
+                Asutosh Mohanty
               </span>
             </motion.h1>
 
@@ -39,7 +39,7 @@ export default function Hero() {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <span className="inline-block text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold tracking-wide text-blue-600 dark:text-blue-400">
-                Cloud DevSecOps Engineer
+                Cloud Database Engineer
               </span>
             </motion.div>
             
@@ -49,7 +49,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              Transforming cloud infrastructure with a security-first mindset and automated DevSecOps solutions
+              Optimizing data-driven architectures with secure, scalable, and high-performance cloud databases
 
             </motion.p>
 

@@ -5,19 +5,19 @@ import { CodeBracketIcon, ArrowTopRightOnSquareIcon } from '@heroicons/react/24/
 
 const projects = [
   {
-    title: 'ZeroTrustOps - DevSecOps Pipeline',
-    description: 'Legendary DevSecOps platform for Kubernetes — CI/CD pipelines, GitOps workflows, and runtime security with Falco & Kyverno. Built to enable secure, automated, and resilient cloud-native deployments.',
-    technologies: ['Kubernetes', 'GitOps', 'Falco', 'Kyverno', 'CI/CD'],
+    title: '🛍️ Big-Mart Sales Prediction',
+    description: 'Cloud-Native Data Pipeline for Retail Sales Forecasting',
+    technologies: ['PostgreSQL', 'Python', 'Flask', 'Scikit-learn', 'XGBoost', 'GitHub Actions', 'CI/CD'],
     image: '/projects/zerotrustops.jpg',
-    github: 'https://github.com/Debasish-87/ZeroTrustOps-Platform',
+    github: 'https://github.com/asutosh-2000/Big-Mart-Sales-Prediction',
     live: 'https://zerotrustops-demo.com',
   },
   {
-    title: 'ScareCrow',
-    description: 'AI-powered Paddy Disease Detection system leveraging deep learning with CNN and Google Cloud Vision API, built using Flask for real-time prediction and recommendation.',
-    technologies: ['Flask', 'CNN', 'Google Cloud', 'Python'],
+    title: 'scalable-static-site',
+    description: 'Built and deployed a fully automated, cloud-native static website using Terraform, AWS S3, Cloudflare, and GitHub Actions, following modern DevOps and GitOps principles. Designed to be secure, scalable, and cost-effective.',
+    technologies: ['Terraform', 'AWS S3', 'Cloudflare ', 'GitHub Actions', 'HCL', 'DNS Automation'],
     image: '/projects/scarecrow.jpg',
-    github: 'https://github.com/Debasish-87/ScareCrow',
+    github: 'https://github.com/asutosh-2000/scalable-static-site',
     live: 'https://scarecrow-ai-demo.com',
   },
   {
@@ -25,33 +25,10 @@ const projects = [
     description: 'Secure web system for detecting and encrypting Personally Identifiable Information (PII) using OCR and AES-256 encryption, built with Django.',
     technologies: ['Django', 'OCR', 'AES-256', 'Python'],
     image: '/projects/pii-protection.jpg',
-    github: 'https://github.com/Debasish-87/pii-protection',
+    github: 'https://github.com/asutosh-2000/pii-protetion',
     live: 'https://pii-protection-demo.com',
   },
-  {
-    title: 'Big-Mart Sales Prediction',
-    description: 'Forecasting Big-Mart sales using historical data and machine learning models with features such as product type, store location, and seasonal trends.',
-    technologies: ['Python', 'Pandas', 'Scikit-learn', 'Jupyter Notebook'],
-    image: '/projects/bigmart-sales.jpg',
-    github: 'https://github.com/Debasish-87/Big-Mart-Sales-Prediction',
-    live: 'https://bigmart-predictor-demo.com',
-  },
-  {
-    title: 'Cloud Infrastructure Automation',
-    description: 'Automated cloud infrastructure deployment using Terraform and AWS services, implementing security best practices and cost optimization.',
-    technologies: ['AWS', 'Terraform', 'Docker', 'Kubernetes'],
-    image: '/projects/cloud-infra.jpg',
-    github: 'https://github.com/username/cloud-infra',
-    live: 'https://cloud-infra-demo.com',
-  },
-  {
-    title: 'Kubernetes Security Platform',
-    description: 'Developed a security platform for Kubernetes clusters with runtime security monitoring and policy enforcement.',
-    technologies: ['Kubernetes', 'Falco', 'OPA', 'Prometheus'],
-    image: '/projects/k8s-security.jpg',
-    github: 'https://github.com/username/k8s-security',
-    live: 'https://k8s-security-demo.com',
-  },
+
 ];
 
 export default function Projects() {
